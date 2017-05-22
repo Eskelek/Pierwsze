@@ -1,0 +1,31 @@
+{
+  "name": "kodilla-repo",
+  "version": "1.0.0",
+  "description": "próbny grunt",
+  "main": "index.js",
+  "dependencies": {
+    "package-json": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "kodilla-tet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eskelek/Pierwsze.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Piotr Powroznik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eskelek/Pierwsze/issues"
+  },
+  "homepage": "https://github.com/Eskelek/Pierwsze#readme"
+}

@@ -1,0 +1,484 @@
+* 
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    font-family: 'Raleway', sans-serif
+
+/*variables*/
+
+$white: #fff
+$darkgrey: #313332
+$water: #01C7EA
+
+/*-------*/
+
+[class*="col-"] 
+    float: left
+    min-height: 1px
+    padding: 5px
+
+.container 
+    margin: 0 auto
+    max-width: 1200px
+
+/*nawigacja/sek powitalna*/
+nav 
+    background-color: $darkgrey
+    min-height: 70px
+    overflow: auto
+    font-size: 0
+    
+    img 
+        margin-left: 12%
+        cursor: pointer
+        padding: 10px 0
+
+header
+    ul 
+        list-style-type: none
+        float: right
+        li 
+            display: inline-block
+            a 
+                text-decoration: none
+                text-align: center
+                line-height: 70px
+                display: inline-block
+                padding: 0 40px
+                color: $white
+                font-size: 18px
+                max-width: 170px
+                &:hover
+                    color: $water
+.hero 
+    height: 500px
+    background: url(https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+    background-size: cover
+    background-position: center
+
+    .slogan 
+        position: relative
+        top: 160px
+        float: right
+        font-size: 25px
+        max-width: 800px
+        color: $white
+        background-color: rgba( 0, 0, 0, .6)
+        text-transform: uppercase
+    
+        h1 
+            padding-left: 5%
+            &:first-child
+                padding-right: 5%
+        span
+            font-weight: 400
+    
+/*------*/
+/*sekcja korzyści*/
+.benefit
+    .col-6
+        margin-left: 50%
+        transform: translateX(-50%)
+        h1
+            font-weight: bold
+            font-size: 40px
+            margin: 30px auto
+            text-align: center
+    p
+        padding: 0 5%
+        color: #66686b
+        text-align: center
+    h1
+        height: 60px
+        text-transform: uppercase
+        margin-top: 15px
+        &:hover
+            color: $water
+            cursor: pointer
+    .icon 
+        height: 75px
+        width: 75px
+        background-color: $darkgrey
+        color: $white
+        border-radius: 20%
+        font-size: 45px
+
+    .btn 
+        margin: 50px auto
+        text-align: center
+        min-width: 110px
+
+    i
+        &:hover 
+            color: $water
+            cursor: pointer
+    button
+        &:hover
+            background-color: $water
+            cursor: pointer
+/*------*/
+/*gallery*/
+.gallery 
+    margin: 20px 0
+
+    .imagei 
+        height: 250px
+        position: relative
+        overflow: hidden
+        margin: 0
+        padding: 0
+        &:hover
+            .layer
+                background: rgba(0,0,0, .5)
+            .layer .fa
+                opacity: 1
+        img
+            height: 100%
+            width: 100%
+        .layer 
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            color: $white
+            text-align: center
+            transition: .8s
+            .fa
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+                margin-right: 15px
+                cursor: pointer
+                opacity: 0
+                transition: .5s
+                background-color: transparent
+                &:last-child
+                    margin-right: 0
+/*-------*/
+/*team*/
+.person  
+    height: 300px
+    text-align: center
+    position: relative
+    img
+        border-radius: 50%
+        border: 2px solid #FFF
+    .show 
+        width: 70%
+        height: 70%
+        border-radius: 50%
+        position: absolute
+        top: 1%
+        left: 15%
+        font-size: 25px
+        text-align: center
+        transition: .6s
+        cursor: pointer
+        &:hover
+            background: rgba(0,0,0, .4)
+            p
+                opacity: 1
+        p
+            position: relative
+            top: 60%
+            color: $white
+            opacity: 0
+
+/*---------*/
+/*tablet*/
+.tablet 
+    background-color: #665466
+    overflow: hidden
+    max-height: 400px
+    .image 
+        text-align: center
+        position: relative
+        top: 50px
+        img 
+            width: 350px
+            border-radius: 10%
+    .text 
+        padding-left: 30px
+        position: relative
+        top: 100px
+        color: $white
+        text-shadow: 3px 3px 3px #000
+        h1 
+            font-size: 40px
+            font-weight: 700
+            text-transform: uppercase
+            margin-bottom: 15px
+        p 
+            margin-right: 10%
+            color: $white
+            text-align: left
+            &:nth-child(3) 
+                font-style: italic
+
+/*-------*/
+/*counter*/
+.counter 
+    padding: 50px 0
+    .col
+        min-width: 200px
+        text-align: center
+        h1 
+            font-size: 70px
+            font-weight: bold
+        p 
+            font-weight: 600
+            color: $water
+            font-size: 20px
+            text-transform: uppercase
+            text-shadow: 1px 1px 0px #000
+
+/*-------*/
+/*footer*/
+footer
+    width: 100%
+    .cont 
+        background-color: $darkgrey
+        h1
+            margin: 30px auto 15px
+            text-transform: uppercase
+        .ka
+            padding: 15px
+            .social
+                margin-top: 15px
+                text-align: left
+                .fa
+                    background-color: $darkgrey
+                    font-size: 25px
+                    width: 40px
+                    height: 40px
+                    line-height: 40px
+                    &:hover
+                        color: $white
+                        background-color: $water
+                .fa-twitter 
+                    color: #4099FF
+
+                .fa-youtube 
+                    color: $white
+
+                .fa-google-plus 
+                    color: #DB5A3C
+
+                .fa-facebook 
+                    color: #3B5998
+
+                .fa-instagram 
+                    color: #cea021
+
+                .fa-pie-chart 
+                    color: #24a522
+
+    .cop 
+        height: 60px
+        line-height: 60px
+        background-color: #252726
+        text-align: center
+    .row 
+        color: $white
+
+
+
+/*------*/
+/*media 701-1250*/
+@media(max-width: 1250px)
+    nav 
+        img 
+            margin-left: 50%
+            transform: translateX(-50%)
+        ul 
+            width: 100%
+            text-align: center
+    
+    .imagei 
+        .layer 
+            .fa 
+                opacity: 1
+                top: 80%
+                background-color: #404142
+                border-radius: 10%
+                transform: scale(2)
+                &:first-child
+                    margin-right: 80px
+    .person 
+        .show
+            &:hover
+                background: rgba(0,0,0, 0)
+            p 
+                opacity: 1
+                color: #000
+    
+    .text 
+        top: 50px
+    
+    footer 
+        h1 
+            text-align: center
+        p 
+            text-align: center
+        .social 
+            text-align: center
+            button
+                text-align: center
+            .fa 
+                height: 60px
+                width: 60px
+                line-height: 60px
+                font-size: 35px
+        .container 
+            .row 
+                text-align: center
+                padding-left: 30%
+
+/*-------*/
+/*media 700*/
+@media(max-width: 750px)
+    header 
+        nav 
+            overflow: visible
+            ul 
+                float: none
+                li 
+                    display: block
+                    border-bottom: 1px solid #858687
+    
+    .slogan 
+        float: none
+        text-align: center
+    
+    .text 
+        margin-left: -10px
+        padding-left: 0
+        p 
+            background-color: rgba(0,0,0, .2)
+    
+    .tablet 
+        max-height: none
+    
+    .counter 
+        padding-bottom: 15px
+    
+    footer 
+        .container 
+            .row 
+                padding-left: 0
+    
+
+/*---------*/
+/*grid*/
+
+.row::before,
+.row::after 
+    content: ""
+    display: table
+    clear: both
+
+.col-1 
+    width: 8.33%
+.col-2 
+    width: 16.66%
+.col-3 
+    width: 25%
+.col-4 
+    width: 33.33%
+.col-5 
+    width: 41.66%
+.col-6 
+    width: 50%
+.col-7 
+    width: 58.33%
+.col-8 
+    width: 66.66%
+.col-9 
+    width: 75%
+.col-10 
+    width: 83.33%
+.col-11 
+    width: 91.66%
+.col-12 
+    width: 100%
+
+.col-offset-0 
+    margin-left: 0
+.col-offset-1 
+    margin-left: 8.33%
+.col-offset-2 
+    margin-left: 16.66%
+.col-offset-3 
+    margin-left: 25%
+.col-offset-4 
+    margin-left: 33.33%
+.col-offset-5 
+    margin-left: 41.66%
+.col-offset-6 
+    margin-left: 50%
+.col-offset-7 
+    margin-left: 58.33%
+.col-offset-8 
+    margin-left: 66.66%
+.col-offset-9
+    margin-left: 75%
+.col-offset-10 
+    margin-left: 83.33%
+.col-offset-11 
+    margin-left: 91.66%
+
+@media (max-width: 750px)
+    /* For tablets: */
+    .col-s-1 
+        width: 8.33%
+    .col-s-2 
+        width: 16.66%
+    .col-s-3 
+        width: 25%
+    .col-s-4 
+        width: 33.33%
+    .col-s-5 
+        width: 41.66%
+    .col-s-6 
+        width: 50%
+    .col-s-7 
+        width: 58.33%
+    .col-s-8 
+        width: 66.66%
+    .col-s-9 
+        width: 75%
+    .col-s-10 
+        width: 83.33%
+    .col-s-11 
+        width: 91.66%
+    .col-s-12 
+        width: 100%
+        
+@media (min-width: 751px) and (max-width: 1250px)
+    /* For desktop: */
+    .col-m-1 
+        width: 8.33%
+    .col-m-2 
+        width: 16.66%
+    .col-m-3 
+        width: 25%
+    .col-m-4 
+        width: 33.33%
+    .col-m-5 
+        width: 41.66%
+    .col-m-6 
+        width: 50%
+    .col-m-7 
+        width: 58.33%
+    .col-m-8
+        width: 66.66%
+    .col-m-9 
+        width: 75%
+    .col-m-10 
+        width: 83.33%
+    .col-m-11 
+        width: 91.66%
+    .col-m-12 
+        width: 100%
